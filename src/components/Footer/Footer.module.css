@@ -1,0 +1,6 @@
+.Footer {
+  background-color: var(--card-bg);
+  color: var(--secondary-text);
+  padding: 10px 20px;
+  text-align: center;
+}

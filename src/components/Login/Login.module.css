@@ -1,0 +1,10 @@
+.formbox {
+  background-color: #2e3038;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+.vh90 {
+  min-height: 90vh;
+}

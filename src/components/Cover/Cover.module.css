@@ -1,0 +1,11 @@
+.Cover {
+  background: url("https://images.unsplash.com/photo-1531058020387-3be344556be6")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}

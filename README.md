@@ -1,6 +1,6 @@
 # 🎉 Event Booking System - React Frontend
 
-This is a React-based Event Booking web application built for internship purposes. The system allows users to browse and book events, while administrators can manage events through a dedicated admin panel.
+This is a React-based Event Booking web application . The system allows users to browse and book events, while administrators can manage events through a dedicated admin panel.
 
 ## 🔗 Live Preview
 🔗 [(https://event-booking-system-react.vercel.app/login)](https://event-booking-system-react.vercel.app/login)

@@ -29,7 +29,7 @@ const Admin = () => {
 
   const fetchCategories = async () => {
     try {
-      const res = await axios.get("http://eventifybook-sys.runasp.net/api/categories", config);
+      const res = await axios.get("https://eventifybook-sys.runasp.net/api/categories", config);
       setCategories(res.data);
     } catch (error) {
       toast.error("Error fetching categories");
@@ -39,7 +39,7 @@ const Admin = () => {
   const fetchEvents = async () => {
     try {
       const res = await axios.get(
-        `http://eventifybook-sys.runasp.net/api/Events/?PageNumber=${pageNumber}&PageSize=5&FilterByAlreadyExsit=${filterByExist}`,
+        `https://eventifybook-sys.runasp.net/api/Events/?PageNumber=${pageNumber}&PageSize=5&FilterByAlreadyExsit=${filterByExist}`,
         config
       );
       setEvents(res.data.items || []);
@@ -67,7 +67,7 @@ const Admin = () => {
     }
 
     try {
-      await axios.post("http://eventifybook-sys.runasp.net/api/events", formData, config);
+      await axios.post("https://eventifybook-sys.runasp.net/api/events", formData, config);
       toast.success("Event created");
       fetchEvents();
       resetForm();
@@ -80,7 +80,7 @@ const Admin = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://eventifybook-sys.runasp.net/api/events/${id}`, config);
+      await axios.delete(`https://eventifybook-sys.runasp.net/api/events/${id}`, config);
       toast.success("Event deleted");
       fetchEvents();
     } catch (error) {

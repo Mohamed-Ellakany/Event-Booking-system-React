@@ -30,7 +30,7 @@ export default function Events() {
   const fetchEvents = async (pageNum) => {
     try {
       const res = await axios.get(
-        `http://eventifybook-sys.runasp.net/api/events?PageNumber=${pageNum}&PageSize=${pageSize}&FilterByAlreadyExsit=true`,
+        `https://eventifybook-sys.runasp.net/api/events?PageNumber=${pageNum}&PageSize=${pageSize}&FilterByAlreadyExsit=true`,
         config
       );
       setEvents(res.data.items || []);
@@ -42,7 +42,7 @@ export default function Events() {
 
   const fetchBookedEvents = async () => {
     try {
-      const res = await axios.get(`http://eventifybook-sys.runasp.net/api/Events/booked`, config);
+      const res = await axios.get(`https://eventifybook-sys.runasp.net/api/Events/booked`, config);
       setBookedEvents(res.data.value || []);
     } catch (err) {
       toast.error("Failed to load booked events");
@@ -52,7 +52,7 @@ export default function Events() {
   const handleBookNow = async (eventId) => {
     try {
       await axios.post(
-        `http://eventifybook-sys.runasp.net/api/Events/book?EventId=${eventId}`,
+        `https://eventifybook-sys.runasp.net/api/Events/book?EventId=${eventId}`,
         null,
         config
       );

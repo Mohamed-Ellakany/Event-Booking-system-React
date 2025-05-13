@@ -32,7 +32,7 @@ let navigate = useNavigate();
 
   setIsLoading (true);
 
-  let response = await axios.post('http://eventifybook-sys.runasp.net/Auth/Login' , values).catch((err)=>{
+  let response = await axios.post('https://eventifybook-sys.runasp.net/Auth/Login' , values).catch((err)=>{
  
     
     if (err.status === 400 || err.status === 404){

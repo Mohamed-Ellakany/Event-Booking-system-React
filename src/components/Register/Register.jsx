@@ -31,7 +31,7 @@ let navigate =useNavigate();
  async function submitRegister (values){
     isLoading =true;
 
-  await axios.post('http://eventifybook-sys.runasp.net/Auth/register' , values).catch((err)=>{
+  await axios.post('https://eventifybook-sys.runasp.net/Auth/register' , values).catch((err)=>{
     if (err.status === 409){
       errors = "this email is already exist"
     }

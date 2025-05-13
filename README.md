@@ -25,7 +25,6 @@ Running on MonsterASP.NET
 - Access Admin Panel
 - Add new events
 - Delete existing events
-- Perform all user actions
 
 ---
 

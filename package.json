@@ -2,6 +2,7 @@
   "name": "eventbookingsystem",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://eventifybook-sys.runasp.net",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free": "^6.7.2",
